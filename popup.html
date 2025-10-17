@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>W Log</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                padding: 10px;
+                width: 250px;
+                background-color: #000000; /* Jet black */
+                color: #EADCF8; /* Soft lavender */
+            }
+            button {
+                padding: 10px;
+                font-size: 16px;
+                width: 100%;
+                cursor: pointer;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 4px;
+                color: #000000; /* Contrast against pastel backgrounds */
+                font-weight: bold;
+            }
+            #startButton {
+                background-color: #A0E7E5; /* Minty teal */
+            }
+            #submitButton {
+                background-color: #FFB5E8; /* Soft pink */
+                display: none;
+            }
+            #copyButton {
+                background-color: #B5E8B5; /* Soft green */
+                display: none;
+                margin-top: 10px;
+            }
+            .small-buttons {
+                display: flex;
+                gap: 5px;
+                margin-bottom: 10px;
+            }
+            .small-buttons button {
+                padding: 6px;
+                font-size: 12px;
+                flex: 1;
+                margin-bottom: 0;
+            }
+            #saveButton {
+                background-color: #FFCCE5; /* Light pink */
+            }
+            #saveToDocsButton {
+                background-color: #E5CCFF; /* Light purple */
+            }
+            #textInput {
+                width: 100%;
+                padding: 8px;
+                margin-bottom: 10px;
+                border: 1px solid #555;
+                border-radius: 4px;
+                font-size: 14px;
+                box-sizing: border-box;
+                background-color: #2D2D2D; /* Dark charcoal for comfort */
+                color: #FDE2FF; /* Light peachy-lavender */
+                display: none;
+            }
+            #output {
+                margin-top: 15px;
+                white-space: pre-wrap;
+                font-size: 14px;
+                line-height: 1.4;
+                color: #CBAACB; /* Soft mauve for logs */
+            }
+        </style>
+    </head>
+    <body>
+        <button id="startButton">Speak</button>
+        <div class="small-buttons">
+            <button id="saveButton">Save</button>
+            <button id="saveToDocsButton">Save to Docs</button>
+        </div>
+        <textarea id="textInput" placeholder="Type your workout here... (e.g., 'I did bench press 3 sets of 12 reps with 45 kg')" rows="3"></textarea>
+        <button id="submitButton">Submit Workout</button>
+        <div id="output"></div>
+        <button id="copyButton">Copy Workout Log</button>
+        <script src="popup.js"></script>
+    </body>
+</html>

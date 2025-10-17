@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "W Log",
+  "version": "1.0",
+  "description": "Click to speak and get an AI response",
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://models.github.ai/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  },
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
